@@ -14,8 +14,8 @@ final class ModelData: ObservableObject {
     @Published var profile = Profile.default
     
     var features: [Landmark] {
-            landmarks.filter { $0.isFeatured }
-        }
+        landmarks.filter { $0.isFeatured }
+    }
     
     var categories: [String: [Landmark]] {
         Dictionary(
